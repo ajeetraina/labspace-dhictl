@@ -1,25 +1,33 @@
 metadata:
-  id: ajeetraina/labspace-dhictl
+  id: dhictl
   sourceRepo: github.com/ajeetraina/labspace-dhictl
   contentVersion: abcd123 # Will be filled in during CI
 
-title: Labspace starter
+title: Securing the Supply Chain with dhictl & Docker Hardened Images
 description: |
-  A basic template for creating a Labspace, including all of the boilerplate needed to write and publish a Labspace.
+  Take a vulnerable Product Catalog service, surface its CVEs, then use the
+  dhictl CLI to browse, adopt, inspect, and customize Docker Hardened Images
+  (DHI) slashing the attack surface and verifying the supply chain.
 
 sections:
-  - title: Introduction
+  - title: Introduction & Setup
     contentPath: 01-introduction.md
-  - title: Main Content 1
-    contentPath: 02-main-content.md
-  - title: Conclusion
-    contentPath: 03-conclusion.md
+  - title: Meet the Product Catalog
+    contentPath: 02-product-catalog.md
+  - title: Introducing Vulnerabilities
+    contentPath: 03-introducing-vulnerabilities.md
+  - title: Browsing the DHI Catalog
+    contentPath: 04-browsing-dhi-catalog.md
+  - title: Migrating to a Hardened Image
+    contentPath: 05-migrating-to-dhi.md
+  - title: Supply Chain & dhictl Capabilities
+    contentPath: 06-supply-chain-and-capabilities.md
 
 # Services are used to add default tabs in the Labspace interface.
-# The IDE will always be present as a service, but you can add additional services as needed.
+# The IDE will always be present as a service.
 # Icon values come from https://fonts.google.com/icons/
 services:
   - id: app
-    url: http://localhost:3000
-    title: App
-    icon: anchor
+    url: http://localhost:8090
+    title: Product Catalog
+    icon: storefront

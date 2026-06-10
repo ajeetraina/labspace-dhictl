@@ -1,0 +1,16 @@
+{
+  "name": "product-catalog",
+  "version": "1.0.0",
+  "description": "A tiny Product Catalog REST API used to demonstrate Docker Hardened Images and dhictl",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "Apache-2.0"
+}
